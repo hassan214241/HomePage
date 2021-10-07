@@ -1,0 +1,256 @@
+.main-container {
+  /* margin: 0px;
+  padding: 0px;
+  width: 100vw;
+  height: 100vh; */
+  box-sizing: border-box;
+  background-color: black;
+}
+
+.logo {
+  line-height: 70px;
+  padding: 0 40px;
+  color: white;
+  font-weight: bold;
+  font-size: large;
+}
+.nav-area ul {
+  float: right;
+  margin-right: 20px;
+}
+.nav-area ul li {
+  display: inline-block;
+  line-height: 60px;
+  margin: 0 5px;
+}
+.nav-area ul li a {
+  color: #fff;
+  font-size: 14px;
+  padding: 22px 15px;
+  font-weight: bold;
+  margin-right: 50px;
+  text-decoration: none;
+}
+.nav-area ul li a:hover {
+  color: green;
+  transition: 0.5s;
+}
+
+.btn-area {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 62px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#box {
+  display: none;
+}
+@media (max-width: 860px) {
+  .btn-area {
+    display: block;
+  }
+  .nav-area ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 62px;
+    background-color: black;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    z-index: 1;
+  }
+  .nav-area ul li {
+    display: block;
+    margin: 0;
+    line-height: 30px;
+    padding: 25px 0;
+  }
+  .nav-area ul li a {
+    font-size: x-large;
+    color: green;
+    cursor: pointer;
+  }
+
+  .nav-area ul li a:hover {
+    background: none;
+  }
+  #box:checked ~ ul {
+    left: 0;
+  }
+  .logo {
+    margin-left: 5px;
+  }
+  
+}
+
+.search-bar {
+  width: 90%;
+  padding: 30px 0px 30px 0px;
+  /* background-color: royalblue; */
+  margin-left: 30px;
+  display: flex;
+  justify-content: start;
+
+  flex-direction: row;
+}
+.content-warp {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  /* border: 2px solid rgb(238, 5, 5); */
+  margin-top: 20px;
+}
+.warp-1 {
+  display: flex;
+  /* margin: 10px; 
+   padding: 50px 0px 50px 0px; */
+  /* background-color: salmon; */
+  flex-grow: 5;
+  justify-content: start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.warp-2 {
+  display: flex;
+  /* margin: 10px; */
+  /* padding: 100px 0px 200px 0px; */
+  /* background-color: seagreen; */
+  flex-grow: 1;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.input {
+  width: 35%;
+  height: 40px;
+  border-radius: 25px 0 0 25px;
+  padding-left: 25px;
+  border: none;
+  outline: none;
+}
+.close {
+  height: 42px;
+  border-radius: 0 25px 25px 0;
+  border: none;
+  outline: none;
+  padding-right: 10px 50px 10px 0px;
+  margin-right: 10px;
+  background-color: #fff;
+  cursor: pointer;
+}
+.a-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 30px 10px 30px;
+  width: 10%;
+}
+.Privacy {
+  color: rgb(182, 178, 178);
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.circle-1 {
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  border: none;
+  background-color: #81f901;
+  cursor: pointer;
+}
+.circle-2 {
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  border: none;
+  background-color: #a750f6;
+  cursor: pointer;
+}
+.warp-1 h1 {
+  color: #fff;
+}
+.warp-1 h5 {
+  color: #fff;
+}
+
+/* footer */
+.footer {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer-content {
+  display: flex;
+  background-color: #fff;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.soical-link {
+  display: flex;
+  justify-content: space-around;
+
+  cursor: pointer;
+  padding: 20px;
+  width: 300px;
+  height: 30px;
+}
+
+.footer-input {
+  height: 40px;
+  border-radius: 10px;
+  border: 2px solid skyblue;
+  padding-left: 10px;
+}
+
+.sign-btn {
+  background-color: black;
+  color: #e9bf63;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px 25px;
+  margin-top: 25px;
+  margin-right: 300px;
+
+  cursor: pointer;
+
+}
+.sign-btn:hover {
+  background-color: #fff;
+  color: black;
+  border: 2px solid black;
+  outline: none;
+  border-radius: 5px;
+  padding: 8px 25px;
+  margin-top: 15px;
+}
+
+.label{
+  padding-right: 350px;
+  padding-bottom: 10px;
+  padding-top: 10PX;
+}
+.label1{
+  padding-right: 380px;
+  padding-bottom: 10px;
+  padding-top: 10PX;
+}
