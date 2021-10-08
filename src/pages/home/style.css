@@ -3,7 +3,7 @@
   padding: 0px;
   width: 100vw;
   height: 100vh; */
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   background-color: black;
 }
 
@@ -14,6 +14,7 @@
   font-weight: bold;
   font-size: large;
 }
+
 .nav-area ul {
   float: right;
   margin-right: 20px;
@@ -58,7 +59,7 @@
     height: 100vh;
     top: 62px;
     background-color: black;
-    left: -100%;
+    left: -120%;
     text-align: center;
     transition: all 0.5s;
     z-index: 1;
@@ -84,7 +85,6 @@
   .logo {
     margin-left: 5px;
   }
-  
 }
 
 .search-bar {
@@ -182,11 +182,12 @@
 
 /* footer */
 .footer {
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /* width: 90vw; */
 }
 .footer-content {
   display: flex;
@@ -196,13 +197,13 @@
   align-items: center;
 }
 
-.footer-input {
+/* .footer-input {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-}
+} */
 
 .soical-link {
   display: flex;
@@ -216,6 +217,7 @@
 
 .footer-input {
   height: 40px;
+  width: 70%;
   border-radius: 10px;
   border: 2px solid skyblue;
   padding-left: 10px;
@@ -229,10 +231,9 @@
   border-radius: 5px;
   padding: 10px 25px;
   margin-top: 25px;
-  margin-right: 300px;
+  /* margin-right: 300px; */
 
   cursor: pointer;
-
 }
 .sign-btn:hover {
   background-color: #fff;
@@ -244,13 +245,33 @@
   margin-top: 15px;
 }
 
-.label{
-  padding-right: 350px;
+.label {
+  /* padding-right: 350px; */
   padding-bottom: 10px;
-  padding-top: 10PX;
+  padding-top: 10px;
 }
-.label1{
-  padding-right: 380px;
+.label1 {
+  /* padding-right: 380px; */
   padding-bottom: 10px;
-  padding-top: 10PX;
+  padding-top: 10px;
+}
+
+@media (max-width: 480px) {
+  .search-bar {
+    width: 90%;
+    padding: 30px 0px 30px 0px;
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+  }
+  .input {
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border-radius: 25px 0 0 25px;
+    padding-left: 25px;
+    border: none;
+    outline: none;
+  }
 }
