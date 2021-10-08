@@ -1,14 +1,14 @@
 import React from "react";
 import "./style.css";
 import { MdClose } from "react-icons/md";
-import { BsInstagram, BsTwitter, BsFacebook,BsJustify } from "react-icons/bs";
+import { BsInstagram, BsTwitter, BsFacebook, BsJustify } from "react-icons/bs";
 export const Home = () => {
   return (
     <div className="main-container">
       <div class="nav-area">
         <input type="checkbox" id="box" />
         <label for="box" class="btn-area">
-         <BsJustify/>
+          <BsJustify />
         </label>
         <label class="logo">BEVOE</label>
         <ul>
