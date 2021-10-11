@@ -1,6 +1,12 @@
 .main-container {
   background-color: black;
 }
+.main-content {
+  height: 95vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
 
 .logo {
   line-height: 70px;
@@ -9,7 +15,6 @@
   font-weight: bold;
   font-size: large;
   margin-left: 10px;
- 
 }
 
 .nav-area ul {
@@ -28,11 +33,11 @@
   font-weight: bold;
   margin-right: 50px;
   text-decoration: none;
-
 }
 .nav-area ul li a:hover {
   color: green;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .btn-area {
@@ -71,7 +76,6 @@
   .nav-area ul li a {
     font-size: x-large;
     color: green;
-    cursor: pointer;
   }
 
   .nav-area ul li a:hover {
@@ -96,24 +100,20 @@
 }
 .content-warp {
   display: flex;
-  flex-direction: row;
+
   padding: 20px;
   margin-top: 20px;
+  justify-content: start;
+  align-items: flex-end;
 }
 .warp-1 {
   display: flex;
   flex-grow: 5;
   justify-content: start;
-  align-items: flex-start;
+  align-items: flex-center;
   flex-direction: column;
   margin-left: 30px;
-}
-.warp-2 {
-  display: flex;
-  flex-grow: 1;
-  justify-content: flex-end;
-  align-items: flex-end;
-  flex-direction: column;
+  margin-bottom: 50px;
 }
 
 .input {
@@ -146,24 +146,9 @@
   font-size: 14px;
   font-weight: bold;
   margin-right: 15px;
+  cursor: pointer;
 }
 
-.circle-1 {
-  width: 15px;
-  height: 15px;
-  border-radius: 50px;
-  border: none;
-  background-color: #81f901;
-  cursor: pointer;
-}
-.circle-2 {
-  width: 15px;
-  height: 15px;
-  border-radius: 50px;
-  border: none;
-  background-color: #a750f6;
-  cursor: pointer;
-}
 .warp-1 h1 {
   color: #fff;
 }
@@ -225,12 +210,21 @@
 .label {
   padding-bottom: 5px;
   padding-top: 20px;
-  margin-right: 200px;
+  margin-right: 260px;
 }
 .label1 {
   padding-bottom: 5px;
   padding-top: 20px;
-  margin-right: 230px;
+  margin-right: 290px;
+}
+
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 200px;
 }
 
 @media (max-width: 580px) {
@@ -251,14 +245,26 @@
     border: none;
     outline: none;
   }
-  .warp-2 {
-    display: none;
-  }
+
   .warp-1 {
     margin-left: 30px;
   }
   .footer-content h4 {
     justify-content: center;
     align-items: center;
+  }
+  .footer-text {
+    width: 350px;
+    height: 150px;
+  }
+  .label {
+    padding-bottom: 5px;
+    padding-top: 20px;
+    margin-left: 40px;
+  }
+  .label1 {
+    padding-bottom: 5px;
+    padding-top: 20px;
+    margin-left: 60px;
   }
 }

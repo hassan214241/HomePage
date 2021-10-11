@@ -13,9 +13,6 @@ export const Home = () => {
         <label class="logo">BEVOE</label>
         <ul>
           <li>
-            <a>Newsletter</a>
-          </li>
-          <li>
             <a>Signup</a>
           </li>
           <li>
@@ -47,11 +44,11 @@ export const Home = () => {
               <a className="Privacy">Terms</a>
             </div>
           </div>
-          <div className="warp-2">
+          {/* <div className="warp-2">
             <button className="circle-1"></button>
             <br />
             <button className="circle-2"></button>
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -59,9 +56,11 @@ export const Home = () => {
 
       <div className="footer">
         <div className="footer-content">
+        <div className="footer-text">
           <h1>COMING SOON!</h1>
 
-          <h4>Sign up to know when it's out and follow our journey</h4>
+          <h4 >Sign up to know when it's out and follow our journey</h4>
+          </div>
           <lab className="label">First Name</lab>
           <input
             type="text"
